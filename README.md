@@ -686,7 +686,7 @@ class NaspController extends AppController {
  */
 	public $components = array();
 
-	public function proccess($data){
+	public function process($data){
 		$this->request->data['Log']['log'] = json_encode($data);
 		
 		if ($this->Log->save($this->request->data)) {
