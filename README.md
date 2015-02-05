@@ -700,7 +700,7 @@ class NaspController extends AppController {
 ```
 
 ## Bugs
-Abra uma issue https://github.com/Bendit/moip-assinaturas-cakephp/issues/new
+Abra uma issue https://github.com/fabiowlima/moip-assinaturas-cakephp/issues/new
 
 ## Como contribuir
 
