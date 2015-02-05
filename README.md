@@ -10,7 +10,7 @@ Faça download da última versão do plugin, descompacte e adiciona ao diretóri
 ## Instalação com Submodule
 No diretório raiz do projeto
  ```
- git submodule add https://github.com/Bendit/moip-assinaturas-cakephp.git app/Plugin/MoipAssinaturas/
+ git submodule add https://github.com/fabiowlima/moip-assinaturas-cakephp.git app/Plugin/MoipAssinaturas/
  ```
 
 ## Configuração
