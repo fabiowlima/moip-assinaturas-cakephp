@@ -54,7 +54,7 @@ class WebhooksController extends MoipAssinaturasAppController {
 		if ($methods) {
 			if (in_array('process', $methods)) {
 				$nasp = new NaspController();
-				$nasp->process($data);
+				$nasp->process($body);
 			} else {
 				throw new Exception("Método process não encontrado em NaspController");
 			}
