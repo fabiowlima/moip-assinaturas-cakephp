@@ -41,11 +41,11 @@ class PlansComponent extends MoipComponent {
 			case 201:
 				return array('success' => true, 'message' => 'Plano criado com sucesso');
 			case 400:
-				return array('success' => true, 'message' => $body['message'], 'errors' => $body['errors']);
+				return array('success' => false, 'message' => $body['message'], 'errors' => $body['errors']);
 			case 404:
-				return array('success' => true, 'message' => 'Not found');
+				return array('success' => false, 'message' => 'Not found');
 			default:
-				return array('success' => true, 'message' => 'Ocorreu um erro ao cadastrar o plano');
+				return array('success' => false, 'message' => 'Ocorreu um erro ao cadastrar o plano');
 		}
 	}
 
@@ -65,11 +65,11 @@ class PlansComponent extends MoipComponent {
 			case 200:
 				return array('success' => true, 'message' => 'Plano atualizado com sucesso');
 			case 400:
-				return array('success' => true, 'message' => $body['message'], 'errors' => $body['errors']);
+				return array('success' => false, 'message' => $body['message'], 'errors' => $body['errors']);
 			case 404:
-				return array('success' => true, 'message' => 'Not found');
+				return array('success' => false, 'message' => 'Not found');
 			default:
-				return array('success' => true, 'message' => 'Ocorreu um erro ao atualizar o plano');
+				return array('success' => false, 'message' => 'Ocorreu um erro ao atualizar o plano');
 		}
 	}
 
@@ -88,11 +88,11 @@ class PlansComponent extends MoipComponent {
 			case 200:
 				return array('success' => true, 'plans' => $body['plans']);
 			case 400:
-				return array('success' => true, 'message' => $body['message'], 'errors' => $body['errors']);
+				return array('success' => false, 'message' => $body['message'], 'errors' => $body['errors']);
 			case 404:
-				return array('success' => true, 'message' => 'Not found');
+				return array('success' => false, 'message' => 'Not found');
 			default:
-				return array('success' => true, 'message' => 'Ocorreu um erro ao listar os planos');
+				return array('success' => false, 'message' => 'Ocorreu um erro ao listar os planos');
 		}
 	}
 
@@ -112,11 +112,11 @@ class PlansComponent extends MoipComponent {
 			case 200:
 				return array('success' => true, 'plan' => $body);
 			case 400:
-				return array('success' => true, 'message' => $body['message'], 'errors' => $body['errors']);
+				return array('success' => false, 'message' => $body['message'], 'errors' => $body['errors']);
 			case 404:
-				return array('success' => true, 'message' => 'Not found');
+				return array('success' => false, 'message' => 'Not found');
 			default:
-				return array('success' => true, 'message' => 'Ocorreu um erro ao listar os detalhes do plano');
+				return array('success' => false, 'message' => 'Ocorreu um erro ao listar os detalhes do plano');
 		}
 	}
 
@@ -136,11 +136,11 @@ class PlansComponent extends MoipComponent {
 			case 200:
 				return array('success' => true, 'message' => 'Plano ativado com sucesso');
 			case 400:
-				return array('success' => true, 'message' => $body['message'], 'errors' => $body['errors']);
+				return array('success' => false, 'message' => $body['message'], 'errors' => $body['errors']);
 			case 404:
-				return array('success' => true, 'message' => 'Not found');
+				return array('success' => false, 'message' => 'Not found');
 			default:
-				return array('success' => true, 'message' => 'Ocorreu um erro ao ativar o plano');
+				return array('success' => false, 'message' => 'Ocorreu um erro ao ativar o plano');
 		}
 	}
 
@@ -160,11 +160,11 @@ class PlansComponent extends MoipComponent {
 			case 200:
 				return array('success' => true, 'message' => 'Plano desativado com sucesso');
 			case 400:
-				return array('success' => true, 'message' => $body['message'], 'errors' => $body['errors']);
+				return array('success' => false, 'message' => $body['message'], 'errors' => $body['errors']);
 			case 404:
-				return array('success' => true, 'message' => 'Not found');
+				return array('success' => false, 'message' => 'Not found');
 			default:
-				return array('success' => true, 'message' => 'Ocorreu um erro ao desativar o plano');
+				return array('success' => false, 'message' => 'Ocorreu um erro ao desativar o plano');
 		}
 	}
 }
