@@ -41,11 +41,11 @@ class RetriesComponent extends MoipComponent {
 			case 200:
 				return array('success' => true, 'message' => 'Retentativa executada com sucesso');
 			case 400:
-				return array('success' => true, 'message' => $body['message'], 'errors' => $body['errors']);
+				return array('success' => false, 'message' => $body['message'], 'errors' => $body['errors']);
 			case 404:
-				return array('success' => true, 'message' => 'Not found');
+				return array('success' => false, 'message' => 'Not found');
 			default:
-				return array('success' => true, 'message' => 'Ocorreu um erro ao executar a retentativa');
+				return array('success' => false, 'message' => 'Ocorreu um erro ao executar a retentativa');
 		}
 	}
 
@@ -67,11 +67,11 @@ class RetriesComponent extends MoipComponent {
 			case 201:
 				return array('success' => true, 'message' => 'Regras de retentativa atualizadas com sucesso');
 			case 400:
-				return array('success' => true, 'message' => $body['message'], 'errors' => $body['errors']);
+				return array('success' => false, 'message' => $body['message'], 'errors' => $body['errors']);
 			case 404:
-				return array('success' => true, 'message' => 'Not found');
+				return array('success' => false, 'message' => 'Not found');
 			default:
-				return array('success' => true, 'message' => 'Ocorreu um erro ao atualizar as regras de retentativa');
+				return array('success' => false, 'message' => 'Ocorreu um erro ao atualizar as regras de retentativa');
 		}
 	}
 }

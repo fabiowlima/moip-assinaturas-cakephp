@@ -42,11 +42,11 @@ class SubscriptionsComponent extends MoipComponent {
 			case 201:
 				return array('success' => true, 'message' => 'Assinatura criada com sucesso');
 			case 400:
-				return array('success' => true, 'message' => $body['message'], 'errors' => $body['errors']);
+				return array('success' => false, 'message' => $body['message'], 'errors' => $body['errors']);
 			case 404:
-				return array('success' => true, 'message' => 'Not found');
+				return array('success' => false, 'message' => 'Not found');
 			default:
-				return array('success' => true, 'message' => 'Ocorreu um erro ao cadastrar a assinatura');
+				return array('success' => false, 'message' => 'Ocorreu um erro ao cadastrar a assinatura');
 		}
 	}
 
@@ -68,11 +68,11 @@ class SubscriptionsComponent extends MoipComponent {
 			case 201:
 				return array('success' => true, 'message' => 'Assinatura atualizada com sucesso');
 			case 400:
-				return array('success' => true, 'message' => $body['message'], 'errors' => $body['errors']);
+				return array('success' => false, 'message' => $body['message'], 'errors' => $body['errors']);
 			case 404:
-				return array('success' => true, 'message' => 'Not found');
+				return array('success' => false, 'message' => 'Not found');
 			default:
-				return array('success' => true, 'message' => 'Ocorreu um erro ao atualizar a assinatura');
+				return array('success' => false, 'message' => 'Ocorreu um erro ao atualizar a assinatura');
 		}
 	}
 
@@ -91,11 +91,11 @@ class SubscriptionsComponent extends MoipComponent {
 			case 200:
 				return array('success' => true, 'subscriptions' => $body['subscriptions']);
 			case 400:
-				return array('success' => true, 'message' => $body['message'], 'errors' => $body['errors']);
+				return array('success' => false, 'message' => $body['message'], 'errors' => $body['errors']);
 			case 404:
-				return array('success' => true, 'message' => 'Not found');
+				return array('success' => false, 'message' => 'Not found');
 			default:
-				return array('success' => true, 'message' => 'Ocorreu um erro ao listar as assinaturas');
+				return array('success' => false, 'message' => 'Ocorreu um erro ao listar as assinaturas');
 		}
 	}
 
@@ -115,11 +115,11 @@ class SubscriptionsComponent extends MoipComponent {
 			case 200:
 				return array('success' => true, 'subscription' => $body);
 			case 400:
-				return array('success' => true, 'message' => $body['message'], 'errors' => $body['errors']);
+				return array('success' => false, 'message' => $body['message'], 'errors' => $body['errors']);
 			case 404:
-				return array('success' => true, 'message' => 'Not found');
+				return array('success' => false, 'message' => 'Not found');
 			default:
-				return array('success' => true, 'message' => 'Ocorreu um erro ao listar os detalhes da assinatura');
+				return array('success' => false, 'message' => 'Ocorreu um erro ao listar os detalhes da assinatura');
 		}
 	}
 
@@ -139,11 +139,11 @@ class SubscriptionsComponent extends MoipComponent {
 			case 200:
 				return array('success' => true, 'message' => 'Assinatura suspensa com sucesso');
 			case 400:
-				return array('success' => true, 'message' => $body['message'], 'errors' => $body['errors']);
+				return array('success' => false, 'message' => $body['message'], 'errors' => $body['errors']);
 			case 404:
-				return array('success' => true, 'message' => 'Not found');
+				return array('success' => false, 'message' => 'Not found');
 			default:
-				return array('success' => true, 'message' => 'Ocorreu um erro ao suspender a assinatura');
+				return array('success' => false, 'message' => 'Ocorreu um erro ao suspender a assinatura');
 		}
 	}
 
@@ -163,11 +163,11 @@ class SubscriptionsComponent extends MoipComponent {
 			case 200:
 				return array('success' => true, 'message' => 'Assinatura ativada com sucesso');
 			case 400:
-				return array('success' => true, 'message' => $body['message'], 'errors' => $body['errors']);
+				return array('success' => false, 'message' => $body['message'], 'errors' => $body['errors']);
 			case 404:
-				return array('success' => true, 'message' => 'Not found');
+				return array('success' => false, 'message' => 'Not found');
 			default:
-				return array('success' => true, 'message' => 'Ocorreu um erro ao suspender a assinatura');
+				return array('success' => false, 'message' => 'Ocorreu um erro ao suspender a assinatura');
 		}
 	}
 
@@ -187,11 +187,11 @@ class SubscriptionsComponent extends MoipComponent {
 			case 200:
 				return array('success' => true, 'message' => 'Assinatura cancelada com sucesso');
 			case 400:
-				return array('success' => true, 'message' => $body['message'], 'errors' => $body['errors']);
+				return array('success' => false, 'message' => $body['message'], 'errors' => $body['errors']);
 			case 404:
-				return array('success' => true, 'message' => 'Not found');
+				return array('success' => false, 'message' => 'Not found');
 			default:
-				return array('success' => true, 'message' => 'Ocorreu um erro ao suspender a assinatura');
+				return array('success' => false, 'message' => 'Ocorreu um erro ao suspender a assinatura');
 		}
 	}
 }
